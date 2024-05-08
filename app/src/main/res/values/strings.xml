@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Christ Canteen Online Ordering System</string>
+    <string name="preference_file_key">com.example.christcanteenonlineorderingsystem.PREFERENCE_FILE_KEY</string>
+</resources>

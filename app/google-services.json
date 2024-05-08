@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "186230190309",
+    "project_id": "christ-canteen-611b1",
+    "storage_bucket": "christ-canteen-611b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186230190309:android:5eeaafd40e1fa425cee40c",
+        "android_client_info": {
+          "package_name": "com.example.christcanteenonlineorderingsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmas6D703Sjr1ffPL-_qyheWldI7F1UEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
