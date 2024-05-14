@@ -110,7 +110,6 @@ public class AdminMainActivity extends AppCompatActivity implements AdminItemAda
         adapter = new AdminItemAdapter(this, items, this);
 
 
-
         RecyclerView recyclerView = findViewById(R.id.recycler_admin);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
@@ -334,7 +333,8 @@ public class AdminMainActivity extends AppCompatActivity implements AdminItemAda
             // Call a function to save the FoodItem in Firestore
             saveFoodItemToFirestore(foodItem);
             Log.d(TAG, "showAddItemDialog: Item added to firestore, now uploading image");
-            uploadImageToFirestore(addItemUri, name);
+            if (addItemUri != null)
+                uploadImageToFirestore(addItemUri, name);
 
             // Notify user that item has been saved
             Toast.makeText(AdminMainActivity.this, "Item saved successfully", Toast.LENGTH_SHORT).show();
@@ -394,7 +394,7 @@ public class AdminMainActivity extends AppCompatActivity implements AdminItemAda
         StorageReference storageRef = storage.getReference();
 
         // Todo: extract imagename from uri
-        Log.d(TAG, "uploadImageToFirestore: " + selectedImageUri.getLastPathSegment());
+//        Log.d(TAG, "uploadImageToFirestore: " + selectedImageUri.getLastPathSegment());
         // TODO: if jpg, convert to pnf
         File image = convertJpgToPng(getApplicationContext(), selectedImageUri, name.replace(" ", "_") + ".png");
         if (selectedImageUri.getLastPathSegment() == null) {

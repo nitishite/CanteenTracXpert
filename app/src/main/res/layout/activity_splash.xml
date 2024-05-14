@@ -27,22 +27,32 @@
             android:layout_marginTop="70dp"
             android:fontFamily="@font/font_family"
             android:gravity="center"
-            android:text="Canteen \nTraffic TracXpert"
+            android:text="TracXpert"
             android:textColor="@color/white"
-            android:textSize="36sp"
+            android:textSize="38sp"
             android:letterSpacing="0.05"
             android:textStyle="bold"
 
             />
 
         <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/font_family"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="An Intelligent Canteen Traffic\n Avoiding System" />
+
+        <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="70dp"
             android:gravity="center"
             android:fontFamily="@font/font_family"
-            android:text="Students friendly App"
+            android:text="Customer Friendly App"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:letterSpacing="0.09"
@@ -52,7 +62,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:layout_marginHorizontal="20dp"
             android:scaleType="centerCrop"
             android:src="@drawable/fun1"/>
